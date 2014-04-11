@@ -1,0 +1,74 @@
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "variables";
+@import "mixins";
+
+// Header
+.login-adm {
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  float: right;
+  @include clearfix();
+  @include prefix(border-radius, 3px);
+  
+  .logged {
+    border-right: 1px solid #e5e5e5;
+    color: lighten($link-color, 5%);
+  }
+  
+  .logged,
+  .logoff {
+    padding: 6px 10px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .log-off {
+    color: #E74E59;
+  }
+}
+
+// Form Login
+.form-login {
+  margin-bottom: 100px;
+  input{
+    max-width: 280px;
+    width: 100%;
+  }
+
+}
+
+// Conteudo Principal - Interior iFrame
+.main-content {
+  background: #fff;
+  margin-top: -18px;
+  padding-top: 18px;
+  padding-bottom: 100px;
+}
+
+.sidebar-menu {
+  @include clearfix();
+}
+
+// Footer
+.powered {
+  text-align: right;
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+  .login-adm {
+    float: none;
+    margin: 10px 0;
+  }
+  .panel {
+    margin-top: 10px;
+  }
+
+  .shout_box {
+    display: none;
+  }
+}
