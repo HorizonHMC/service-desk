@@ -156,7 +156,6 @@
 			 	print "</Select>";
 			print "</td>";
         	print "</TR>";
-        	print "<tr><td colspan='2'>&nbsp;</td></tr>";
         	print "<TR>";
             	print "<TD align='center' colspan='2' width='20%' bgcolor='".BODY_COLOR."'><input type='submit'  class='button' value='".TRANS('BT_CAD')."' name='submit'>";
            	print "</TD>";
