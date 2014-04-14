@@ -52,8 +52,6 @@
 
        print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='80%' bgcolor='".$cor3."'>";
 
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
 		print "<tr><td width='80%' align='center'><b>".TRANS('TTL_MODEL_EQUIP_DIST_MEMORY').":</b></td></tr>";
 
 
