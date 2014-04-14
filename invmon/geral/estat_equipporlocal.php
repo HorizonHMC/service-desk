@@ -53,8 +53,6 @@
 
 	print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='80%' bgcolor='".$cor3."'>";
 
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
 		print "<tr><td width='80%' align='center'><b>".TRANS('TTL_TOTAL_EQUIP_CAD_FOR_LOCAL').":</b></td></tr>";
 
 
@@ -81,20 +79,20 @@
 		print "</fieldset>";
 
 		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
-		//print "<tr><td width=80% align=center><b><a href=relatorio_geral.php>Relatório Geral</a>.</b></td></tr>";
-		print "</TABLE>";
+		// //print "<tr><td width=80% align=center><b><a href=relatorio_geral.php>Relatório Geral</a>.</b></td></tr>";
+		// print "</TABLE>";
 
 
-		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<TABLE width='80%' align='center'>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 		
 		print "<tr><td class='line' align='center'><a href='".$_SERVER['PHP_SELF']."' target='_blank')\">".TRANS('NEW_SCREEN')."</a></TD></tr>";
 
