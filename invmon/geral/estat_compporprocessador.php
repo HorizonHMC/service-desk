@@ -84,8 +84,6 @@
 
 		print "<TABLE border='0' cellpadding='5' cellspacing='0' align='left' width='80%' bgcolor='".$cor3."'>";
 
-			print "<tr><td class='line'></TD></tr>";
-			print "<tr><td class='line'></TD></tr>";
 			print "<tr><td width='80%' align='center'><b>".TRANS('TTL_QTD_COMP_PROCESSOR')." <p>".TRANS('OCO_FIELD_UNIT').": ".$msgInst.".</p></b></td></tr>";
 
 			print "<td class='line'>";
