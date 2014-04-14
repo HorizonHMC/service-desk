@@ -277,7 +277,7 @@ if ($_SESSION['s_logado']){
 			
 		print "<div class='col-sm-6'>";
 			print "<div class='panel panel-default'>";
-				print "<div class='panel-heading'>Cadastre-se / Informações</div>";
+				print "<div class='panel-heading'>Cadastre-se / Informa&ccedil;&otilde;es</div>";
 
 				print "<div class='panel-body'>".TRANS('MNS_MSG_CAD_ABERTURA_1')."<a onClick=\"mini_popup('./ocomon/geral/newUser.php')\"><b><u>".TRANS('MNS_MSG_CAD_ABERTURA_2')."!</font></u></b></a></div>";
 			print"</div>";
