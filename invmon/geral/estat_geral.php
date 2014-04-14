@@ -49,27 +49,7 @@
 		$div_hide = "";
 		$hide_buttom = false;
 	}
-
-		print "<div id='Layer2' style='position:absolute; left:80%; top:176px; width:15%; height:40%; z-index:2; ".$div_hide." '>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
-			print "<b>".TRANS('OCO_FIELD_UNIT').":</font></font></b>";
-			print "<FORM name='form1' method='post' action='".$_SERVER['PHP_SELF']."' onSubmit=\"newTarget()\">";
-			$sizeLin = $linhasInst+1;
-			print "<select style='background-color: ".$cor3."; font-family:tahoma; font-size:11px;' name='instituicao[]' size='".$sizeLin."' multiple='yes'>";
-
-
-			print "<option value='-1' selected>".TRANS('ALL')."</option>";
-			while ($rowInst = mysql_fetch_array($resultadoInst))
-			{
-				print "<option value='".$rowInst['inst_cod']."'>".$rowInst['inst_nome']."</option>";
-			}
-			print "</select>";
-
-			print "<br><input style='background-color: ".$cor1."' type='submit' class='button' value='".TRANS('BT_APPLY')."' name='OK'>";
-			print "<input type='checkbox' name='checkprint'>".TRANS('PRINT')."";
-
-			print "</form>";
-		print "</div>";
-
+		
 		$saida="";
 		if (isset ($_POST['instituicao'])) {
 			for ($i=0; $i<count($_POST['instituicao']); $i++){
@@ -116,15 +96,34 @@
 		//Tabela de quantidade de equipamentos cadastrados por dia
 		print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='60%' bgcolor='$cor3'>";
 
-			print "<tr><td class='line'></TD></tr>";
-			print "<tr><td class='line'></TD></tr>";
 			print "<tr><td width=60% align=center><b>".TRANS('TTL_ESTAT_CAD_EQUIP').". <p>".TRANS('OCO_FIELD_UNIT').": $msgInst</p></b></td></tr>";
 
 
 			print "<td class='line'>";
 			print "<fieldset><legend>".TRANS('TTL_GENERAL_BOARD')."</legend>";
 			print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='60%' bgcolor='".$cor3."'>";
-			print "<TR><TD bgcolor='".$cor3."'><b>".TRANS('MNL_VIS_EQUIP')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_QTD')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_PORCENTEGE')."</TD></tr>";
+			print "<TR><TD bgcolor='".$cor3."'><b>".TRANS('MNL_VIS_EQUIP')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_QTD')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_PORCENTEGE')."</TD>";
+
+			print "<td rowspan='3'><div id='Layer2'".$div_hide." '>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
+			print "<b>".TRANS('OCO_FIELD_UNIT').":</font></font></b>";
+			print "<FORM name='form1' method='post' action='".$_SERVER['PHP_SELF']."' onSubmit=\"newTarget()\">";
+			$sizeLin = $linhasInst+1;
+			print "<select name='instituicao[]' size='".$sizeLin."' multiple='yes'>";
+
+
+			print "<option value='-1' selected>".TRANS('ALL')."</option>";
+			while ($rowInst = mysql_fetch_array($resultadoInst))
+			{
+				print "<option value='".$rowInst['inst_cod']."'>".$rowInst['inst_nome']."</option>";
+			}
+			print "</select>";
+
+			print "<input type='submit' class='button' value='".TRANS('BT_APPLY')."' name='OK'>";
+			print "<input type='checkbox' name='checkprint'>".TRANS('PRINT')."";
+
+			print "</form>";
+			print "</td></div>";
+			print "</tr>";
 			$i=0;
 			$j=2;
 
@@ -135,6 +134,7 @@
 			print "<TD bgcolor='".$color."'><a href='mostra_consulta_comp.php?comp_tipo_equip=".$row['tipo']."&ordena=fab_nome,modelo,local,etiqueta' title='".TRANS('HNT_LIST_EQUIP_THIS_TYPE')."'>".$row['Equipamento']."</a></TD>";
 			print "<TD bgcolor='".$color."'>".$row['Quantidade']."</TD>";
 			print "<TD bgcolor='".$color."'>".round($row['Percentual'],2)."%</TD>";
+
 			print "</TR>";
 			$dados[]=$row['Quantidade'];
 			$legenda[]=$row['Equipamento'];
