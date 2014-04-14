@@ -102,17 +102,17 @@
 
 
 		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "</TABLE>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "</TABLE>";
 
-		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<TABLE width='80%' align='center'>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
 		print "<tr><td width='80%' align='center'><b>".TRANS('SLOGAN_OCOMON')." <a href='http://www.unilasalle.edu.br' target='_blank'>".TRANS('COMPANY')."</a>.</b></td></tr>";
 		print "</TABLE>";

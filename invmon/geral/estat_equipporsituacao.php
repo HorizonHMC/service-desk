@@ -38,25 +38,7 @@
 
 	$queryInst = "SELECT * from instituicao order by inst_nome";
 	$resultadoInst = mysql_query($queryInst);
-	$linhasInst = mysql_num_rows($resultadoInst);
-
-		print "<div id='Layer2' style='position:absolute; left:80%; top:176px; width:15%; height:40%; z-index:2; '>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
-			print "<b>".TRANS('OCO_FIELD_UNIT').":</font></font></b>";
-			print "<FORM name='form1' method='post' action='".$_SERVER['PHP_SELF']."'>";
-			$sizeLin = $linhasInst+1;
-			print "<select style='background-color: ".$cor3."; font-family:tahoma; font-size:11px;' name='instituicao[]' size='".$sizeLin."' multiple='yes'>";
-
-
-			print "<option value='-1' selected>".TRANS('ALL')."</option>";
-			while ($rowInst = mysql_fetch_array($resultadoInst))
-			{
-				print "<option value='".$rowInst['inst_cod']."'>".$rowInst['inst_nome']."</option>";
-			}
-			print "</select>";
-			print "<br><input style='background-color: ".$cor1."' type='submit' class='button' value='".TRANS('BT_APPLY')."' name='OK'>";
-
-			print "</form>";
-		print "</div>";
+	$linhasInst = mysql_num_rows($resultadoInst);	
 
 		$saida="";
 		if (isset ($_POST['instituicao'])) {
@@ -102,15 +84,32 @@
 		//Monta o cabeçalho do quadro de estatística
 		print "<TABLE border='0' cellpadding='5' cellspacing='0' align='left' width='80%' bgcolor='".$cor3."'>";
 
-			print "<tr><td class='line'></TD></tr>";
-			print "<tr><td class='line'></TD></tr>";
 			print "<tr><td width='80%' align='center'><b>".TRANS('TTL_ESTAT_SITUAC_GENERAL')."<p>".TRANS('OCO_FIELD_UNIT').": ".$msgInst."</p></b></td></tr>";
 
 
 			print "<td class='line'>";
 			print "<fieldset><legend>".TRANS('TTL_EQUIP_X_SITUAC')."</legend>";
 			print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='80%' bgcolor='".$cor3."'>";
-			print "<TR><TD bgcolor='".$cor3."'><b>".TRANS('MNL_CAD_EQUIP')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_SITUAC')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_QTD')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_PORCENTEGE_FOR_TYPE')."</TD></tr>";
+			print "<TR><TD bgcolor='".$cor3."'><b>".TRANS('MNL_CAD_EQUIP')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_SITUAC')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_QTD')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_PORCENTEGE_FOR_TYPE')."</TD>";
+
+			print "<td rowspan='100%' ><div id='Layer2'>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
+			print "<b>".TRANS('OCO_FIELD_UNIT').":</font></font></b>";
+			print "<FORM name='form1' method='post' action='".$_SERVER['PHP_SELF']."'>";
+			$sizeLin = $linhasInst+1;
+			print "<select name='instituicao[]' size='".$sizeLin."' multiple='yes'>";
+
+
+			print "<option value='-1' selected>".TRANS('ALL')."</option>";
+			while ($rowInst = mysql_fetch_array($resultadoInst))
+			{
+				print "<option value='".$rowInst['inst_cod']."'>".$rowInst['inst_nome']."</option>";
+			}
+			print "</select>";
+			print "<input type='submit' class='button' value='".TRANS('BT_APPLY')."' name='OK'>";
+
+			print "</form>";
+			print "</div></td>";
+			print "</tr>";
 
 
 			while ($rowAux = mysql_fetch_array($resultadoAux)) {
@@ -148,17 +147,17 @@
 			print "</fieldset>";
 
 		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "</TABLE>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "</TABLE>";
 
-		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<TABLE width='80%' align='center'>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
 		print "<tr><td width='80%' align='center'><b>".TRANS('SLOGAN_OCOMON')." <a href='http://www.unilasalle.edu.br' target='_blank'>".TRANS('COMPANY')."</a>.</b></td></tr>";
 		print "</TABLE>";
