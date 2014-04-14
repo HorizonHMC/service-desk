@@ -222,13 +222,13 @@ if ($_SESSION['s_logado']){
 
 	//print "<tr><td style=\"{width:15%;}\" id='centro'>";//id='centro'
  	
- 	print "<div class='container'>";
+ 	print "<div class='container-fluid'>";
  		print "<div class='row'>";
-			print "<div class='col-sm-3 sidebar-menu'>";
+			print "<div class='col-sm-2 sidebar-menu'>";
 				print "<iframe src='menu.php?".$sis."".$PARAM."' name='menu' align='left' height='100%' width='100%' frameborder='0'></iframe>";
 			print "</div>";
 			
-			print "<div class='col-sm-9 main-content'>";
+			print "<div class='col-sm-10 main-content'>";
 				print "<iframe src='".$sisPath."".$sistem."'  name='centro' align='center' width='100%' height='100%' frameborder='0' ></iframe>";
 			print "</div>";
 			
