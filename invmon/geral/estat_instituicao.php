@@ -52,8 +52,6 @@
 
        print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='60%' bgcolor='".$cor3."'>";
 
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
 		print "<tr><td width='60%' align='center'><b>".TRANS('TTL_ESTAT_EQUIP_FOR_UNIT').":</b></td></tr>";
 
 
@@ -83,17 +81,17 @@
 		print "</fieldset>";
 
 		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "</TABLE>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "</TABLE>";
 
-		print "<TABLE width='80%' align='center'>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<TABLE width='80%' align='center'>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
 		print "<tr><td class='line' align='center'><a href='".$_SERVER['PHP_SELF']."' target='_blank')\">".TRANS('NEW_SCREEN')."</a></TD></tr>";
 		print "<tr><td width='80%' align='center'><b>".TRANS('SLOGAN_OCOMON')." <a href='http://www.unilasalle.edu.br' target='_blank'>".TRANS('COMPANY')."</a>.</b></td></tr>";
