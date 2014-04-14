@@ -31,7 +31,7 @@
 
 				}
 
-				print "<SELECT class='select' name='local' id='idLocal'>"; //onChange=\"Habilitar();\"
+				print "<SELECT class='local-search' name='local' id='idLocal'>"; //onChange=\"Habilitar();\"
 				print "<option value=-1 selected>".TRANS('OCO_SEL_LOCAL')."</option>";
 					$query ="SELECT l .  * , r.reit_nome, pr.prior_nivel AS prioridade, d.dom_desc AS dominio, pred.pred_desc as predio
 							FROM localizacao AS l

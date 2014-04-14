@@ -435,7 +435,7 @@ print "<TABLE border='0'  align='center' width='100%' bgcolor='".BODY_COLOR."'>"
 
 				//if ($rowconf['conf_scr_searchbylocal'] || !isIn($_SESSION['s_area'],$rowconf['conf_custom_areas'])) {
 				if ((!empty($rowconf) && $rowconf['conf_scr_searchbylocal']) || empty($rowconf)) {
-					print "<a onClick=\"checa_por_local()\"><img title='".TRANS('CONS_EQUIP_LOCAL')."' width='15' height='15' src='".$imgsPath."consulta.gif' border='0'></a>";
+					print "<a onClick=\"checa_por_local()\"><img title='".TRANS('CONS_EQUIP_LOCAL')."' width='15' height='15' src='".$imgsPath."consulta.gif' border='0' class='search-icon'></a>";
 				}
 			print "</td>";
 

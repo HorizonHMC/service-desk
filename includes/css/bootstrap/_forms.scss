@@ -444,3 +444,14 @@ input[type="checkbox"],
     display: none;
   }
 }
+
+// Select with Search
+.local-search {
+  max-width: 200px;
+  float: left; 
+}
+
+.search-icon {
+  margin-left: 10px;
+  margin-top: 10px;
+}
