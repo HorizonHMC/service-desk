@@ -104,7 +104,7 @@
 			print "<TABLE border='0' cellpadding='5' cellspacing='0' align='center' width='60%' bgcolor='".$cor3."'>";
 			print "<TR><TD bgcolor='".$cor3."'><b>".TRANS('MNL_VIS_EQUIP')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_QTD')."</TD><TD bgcolor='".$cor3."'><b>".TRANS('COL_PORCENTEGE')."</TD>";
 
-			print "<td rowspan='3'><div id='Layer2'".$div_hide." '>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
+			print "<td rowspan='100%'><div id='Layer2'".$div_hide." '>";//  <!-- Ver: overflow: auto    não funciona para o Mozilla-->
 			print "<b>".TRANS('OCO_FIELD_UNIT').":</font></font></b>";
 			print "<FORM name='form1' method='post' action='".$_SERVER['PHP_SELF']."' onSubmit=\"newTarget()\">";
 			$sizeLin = $linhasInst+1;
@@ -154,18 +154,18 @@
 		print "</fieldset>";
 
 		print "<TABLE width=80% align=center>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
-		print "</TABLE>";
+		// print "</TABLE>";
 
-		print "<TABLE width=80% align=center>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
-		print "<tr><td class='line'></TD></tr>";
+		// print "<TABLE width=80% align=center>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
+		// print "<tr><td class='line'></TD></tr>";
 
 		$nome = "titulo=".TRANS('TTL_GRAPH_EQUIP_CAD').".";
 		$msgInst= "".TRANS('OCO_FIELD_UNIT').": ".$msgInst;
