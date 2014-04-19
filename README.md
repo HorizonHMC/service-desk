@@ -3,7 +3,6 @@ Ocomon - Service Desk
 
 Nova UI(*User interface*) para o Ocomon - Sistema de monitoramento e gerenciamento de ocorrências.
 
-----------
 ## O Projeto
 Site oficial do projeto: http://ocomonphp.sourceforge.net/
 
