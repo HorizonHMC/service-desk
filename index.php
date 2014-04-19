@@ -292,10 +292,10 @@ if ($_SESSION['s_logado']){
 			<div class='container'>
 				<div class='row'>
 					<div class='col-sm-6'>
-						<a href='http://ocomonphp.sourceforge.net' target='_blank'>OcoMon</a> - ".TRANS('MNS_MSG_OCOMON').".<br>".TRANS('MNS_MSG_VERSAO').": ".VERSAO." - ".TRANS('MNS_MSG_LIC')." GPL.
+						<a href='http://ocomonphp.sourceforge.net' target='_blank'>OcoMon</a> - ".TRANS('MNS_MSG_OCOMON').".<br>".TRANS('MNS_MSG_VERSAO')." base: ".VERSAO." - ".TRANS('MNS_MSG_LIC')." GPL.
 					</div>
 					<div class='col-sm-6 powered'>
-						by <a href='http://www.medigital.com.br' title='Me Digital'>Me Digital</a>
+						Theme by <a href='https://github.com/meProjects/service-desk' title='MeProjects'>Me</a>
 					</div>
 				</div>
 			</div>";		
