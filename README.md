@@ -2,6 +2,7 @@ Ocomon - Service Desk
 =====================
 
 Nova UI(*User interface*) para o Ocomon - Sistema de monitoramento e gerenciamento de ocorrências.
+![Ocomon by Bruno Rodrigues][1]
 
 ## O Projeto
 Site oficial do projeto: http://ocomonphp.sourceforge.net/
@@ -11,3 +12,5 @@ Site oficial do projeto: http://ocomonphp.sourceforge.net/
 
 ## Licença
 Licença GPL
+
+  [1]: http://i.imgur.com/2mGCQkr.jpg
