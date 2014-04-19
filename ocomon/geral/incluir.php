@@ -345,7 +345,7 @@ print "<TABLE border='0'  align='center' width='100%' bgcolor='".BODY_COLOR."'>"
 
 			//if ($rowconf['conf_scr_chktag'] || !isIn($_SESSION['s_area'],$rowconf['conf_custom_areas'])) {
 			if ((!empty($rowconf) && $rowconf['conf_scr_chktag']) || empty($rowconf)) {
-				print "<a class='likebutton' onClick=\"checa_etiqueta()\" title='".TRANS('CONS_CONFIG_EQUIP')."'><font color='#5E515B'>".TRANS('OCO_FIELD_CONFIG','Configura??o')."</font></a>";
+				print "<a class='likebutton' onClick=\"checa_etiqueta()\" title='".TRANS('CONS_CONFIG_EQUIP')."'><font color='#5E515B'>".TRANS('OCO_FIELD_CONFIG','Configura??o')."</font></a> | ";
 			}
 			//if ($rowconf['conf_scr_chkhist'] || !isIn($_SESSION['s_area'],$rowconf['conf_custom_areas'])) {
 			if ((!empty($rowconf) && $rowconf['conf_scr_chkhist']) || empty($rowconf)) {
@@ -552,7 +552,7 @@ print "<TABLE border='0'  align='center' width='100%' bgcolor='".BODY_COLOR."'>"
 					$estilo .= " display: none;";
 				print "<div id='tr_anexo_$i' style='{ $estilo }'>";
 				//print "<tr id='tr_anexo_$i' $estilo>";
-					print "<div style='{width: 20%; height: 100%; background-color: ".TD_COLOR."; float: left; margin: 0;}'>".TRANS('OCO_FIELD_ATTACH_FILE','Anexar arquivo').":</div>";
+					print "<div style='{width: 20%; height: 100%;float: left; margin: 0;}'>".TRANS('OCO_FIELD_ATTACH_FILE','Anexar arquivo').":</div>";
 					print "<div style='{width: 70%; background-color: ".BODY_COLOR."; float: left; margin-left: 2px;}'>";
 					print "		<INPUT type='file' class='text' name='anexo_$i' id='id_anexo_$i' />";
 					if($i != $row_config['conf_qtd_max_anexos']){
