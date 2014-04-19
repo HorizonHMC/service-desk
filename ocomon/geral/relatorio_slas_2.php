@@ -104,15 +104,13 @@
 		print "						</select>";
 		print "					</td>";
 		print "				</tr>";
-		print "<tr><td colspan='2'><input type='checkbox' name='novaJanela' title='".TRANS('HNT_NEW_WINDOW').".'>".TRANS('OPT_NEW_WINDOW')."<td><tr>";
-		print "		</TABLE><br>";
+		print "<tr><td colspan='2'><input type='checkbox' name='novaJanela' title='".TRANS('HNT_NEW_WINDOW').".'>".TRANS('OPT_NEW_WINDOW')."</td></tr>";
+		print "		</TABLE>";
 
 		print "		<TABLE align='center'>";
 		print "			<tr>";
 		print "	            <td>";
 		print "					<input type='submit'  class='button' value='".TRANS('BT_SEARCH')."' name='ok' >";//onClick=\"submitForm();\"
-		print "	            </TD>";
-		print "	            <td>";
 		print "					<INPUT type='reset'  class='button' value='".TRANS('BT_CLEAR')."' name='cancelar'>";
 		print "				</TD>";
 		print "			</tr>";
