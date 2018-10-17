@@ -14,3 +14,9 @@ Site oficial do projeto: http://ocomonphp.sourceforge.net/
 Licença GPL
 
   [1]: http://i.imgur.com/2mGCQkr.jpg
+
+## Task
+
+> Alteração da forma de acesso ao dados
+### Replace *mysql* por mysqli
+ [Task list](./task.md)
